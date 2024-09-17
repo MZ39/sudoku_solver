@@ -143,7 +143,7 @@ public:
                 }
             }
         }
-        return true;  // If no empty spaces are left, puzzle is solved
+        return true;  // If no empty spaces are left, sudoku is solved
     }
 
     void solve() {
@@ -155,6 +155,7 @@ int main() {
     Sudoku sudoku;
     std::cout << "Unsolved sudoku:" << std::endl;
     sudoku.print();
+    
     sudoku.solve();
     std::cout << std::endl << "Solved sudoku:" << std::endl;
     sudoku.print();
